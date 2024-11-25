@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=3 uid="uid://cebrxogcngn4f"]
+
+[ext_resource type="Script" path="res://prueba/prueba_conect2.gd" id="1_c8xcn"]
+
+[node name="prueba_conect" type="Node2D"]
+script = ExtResource("1_c8xcn")
+
+[node name="Control" type="Control" parent="."]
+custom_minimum_size = Vector2(999, 999)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -499.5
+offset_top = -499.5
+offset_right = 499.5
+offset_bottom = 499.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(21.56, 5.56)
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.935911, 0.576151, 0.842502, 0.368627)
+
+[node name="send" type="Button" parent="."]
+offset_right = 79.0
+offset_bottom = 31.0
+text = "enviar"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 63.0
+offset_top = 126.0
+offset_right = 120.0
+offset_bottom = 157.0
+text = "server"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 248.0
+offset_top = 159.0
+offset_right = 299.0
+offset_bottom = 190.0
+text = "client"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 136.0
+offset_top = 7.0
+offset_right = 519.0
+offset_bottom = 30.0
+text = "fallo error de user servidor , aparentemente bien "
+
+[connection signal="pressed" from="send" to="." method="_on_send_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

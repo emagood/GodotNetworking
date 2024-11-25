@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://sc6m1khe5iyg"]
+[gd_scene load_steps=2 format=3 uid="uid://cakumxqhbeajh"]
 
-[ext_resource type="Script" path="res://scenes/main.gd" id="1_j8u52"]
+[ext_resource type="Script" path="res://prueba/prueba_conect.gd" id="1_oqmcq"]
 
-[node name="Main" type="Node2D"]
-script = ExtResource("1_j8u52")
+[node name="prueba_rota" type="Node2D"]
+script = ExtResource("1_oqmcq")
 
 [node name="Control" type="Control" parent="."]
 custom_minimum_size = Vector2(999, 999)
@@ -11,6 +11,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -499.5
+offset_top = -499.5
+offset_right = 499.5
+offset_bottom = 499.5
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(21.56, 5.56)
@@ -22,20 +26,20 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.576471, 0.756863, 0.756863, 0.368627)
+color = Color(0.889249, 0.677197, 0.275015, 0.690196)
 
 [node name="Button" type="Button" parent="."]
-offset_left = 20.0
-offset_top = 94.0
-offset_right = 66.0
-offset_bottom = 125.0
+offset_left = 21.0
+offset_top = 65.0
+offset_right = 67.0
+offset_bottom = 96.0
 text = "send"
 
 [node name="Label" type="Label" parent="."]
-offset_left = 19.0
-offset_top = 4.0
-offset_right = 179.0
-offset_bottom = 27.0
-text = "Small improvements"
+offset_left = 9.0
+offset_top = 8.0
+offset_right = 108.0
+offset_bottom = 31.0
+text = " como que los user envian y solo server escucha"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
